@@ -7,7 +7,16 @@
     <groupId>org.example</groupId>
     <artifactId>WebSphereExampleApplication</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <modules>
+        <module>RestApiApplication</module>
+        <module>EAR</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <properties>
+        <maven.compile.source>1.8</maven.compile.source>
+        <maven.compile.target>1.8</maven.compile.target>
+    </properties>
 
 <dependencies>
     <dependency>
@@ -16,12 +25,14 @@
         <version>8.0.1</version>
         <scope>provided</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/com.ibm.websphere.appserver.api/com.ibm.websphere.appserver.api.jaxrs -->
+    <!-- https://mvnrepository.com/artifact/com.ibm.websphere.appserver.api/com.ibm.websphere.appserver.api.jaxrs20 -->
     <dependency>
         <groupId>com.ibm.websphere.appserver.api</groupId>
-        <artifactId>com.ibm.websphere.appserver.api.jaxrs</artifactId>
-        <version>1.0.36</version>
+        <artifactId>com.ibm.websphere.appserver.api.jaxrs20</artifactId>
+        <version>1.0.37</version>
+        <scope>provided</scope>
     </dependency>
+
 
 </dependencies>
 </project>

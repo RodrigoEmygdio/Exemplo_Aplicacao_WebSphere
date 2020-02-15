@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="RestApiApplication" />
         <module name="WebSphereExampleApplication" />
+        <module name="EAR" />
       </profile>
     </annotationProcessing>
   </component>
