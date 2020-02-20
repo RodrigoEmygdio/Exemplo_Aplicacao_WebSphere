@@ -10,6 +10,7 @@
     <modules>
         <module>RestApiApplication</module>
         <module>EAR</module>
+        <module>CdiModulo</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -17,6 +18,19 @@
         <maven.compile.source>1.8</maven.compile.source>
         <maven.compile.target>1.8</maven.compile.target>
     </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ejb-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <ejbVersion>3.2</ejbVersion>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 <dependencies>
     <dependency>

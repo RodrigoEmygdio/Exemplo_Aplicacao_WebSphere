@@ -20,6 +20,7 @@
                 <version>2.8</version>
                 <configuration>
                     <displayName>ExemploAplicacaoWebSphere</displayName>
+                    <defaultLibBundleDir>lib</defaultLibBundleDir>
                 </configuration>
             </plugin>
         </plugins>
@@ -30,6 +31,12 @@
             <artifactId>RestApiApplication</artifactId>
             <version>1.0-SNAPSHOT</version>
             <type>war</type>
+        </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>CdiModulo</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>jar</type>
         </dependency>
     </dependencies>
 </project>
